@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no">
         <title>appS1
         </title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body>
-        <div id="dvHeader" class="header">
+        <div id="dvHeader" class="cheader">
                 <label>Titulo de Aplicacion</label>
         </div>
 
@@ -18,7 +21,42 @@
                 <p>Todos los derechos reservados para el desarrollador
                     Arodi Morga Febrero 2020.
                 </p>
+                <fieldset>
+                    <legend>Html css</legend>
+                    <button class="btn btn-primary">Button</button><br />
+                    <input type="text" class="form-control" placeholder="text" value="">
+                    <br />
+                    <select class="form-control">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                    <br />
+                    <div>
+                        <input type="checkbox" class="form-control" style="display:inline-block; width:20px; height: 20px;" checked>
+                        <label>Check tester</label>
+                        <br/>
+                        <input type="checkbox" class="form-control" style="display:inline-block; width:20px; height: 20px;" checked>
+                        <label>Check tester2</label>
+                    </div>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>JQUERY</legend>
+                    <ons-button>Button</ons-button><br />
+                    <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+                    <br />
+                    <ons-select id="choose-sel" onchange="editSelects(event)">
+                        <option value="basic">Basic</option>
+                        <option value="material">Material</option>
+                        <option value="underbar">Underbar</option>
+                    </ons-select>
+                    <br />
+                    <ons-switch checked></ons-switch>
+                </fieldset>
+                <br /><br /><br /><br /><br />
             </div>
+
             <!-- fin divMain-->
             <div id="dvMenu" class="divFrag">
                 <ul>
@@ -61,5 +99,7 @@
     </body> 
     <script type="text/javascript" src="js/jquery341.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script> 
-    <script type="text/javascript" src="cordova.js"></script>  
+    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="cordova.js"></script>
 </html>

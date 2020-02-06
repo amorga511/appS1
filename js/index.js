@@ -1,5 +1,11 @@
 //alert('hello world');
 
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(device.cordova);
+    setTimeout(function(){navigator.vibrate(1000);}, 1000);
+}
+
 $(document).ready(function(){  
     switch_menu('mHome');
     $("#mHome").css('border-top', 'solid 3px red');
